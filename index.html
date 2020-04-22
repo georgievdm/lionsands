@@ -36,45 +36,41 @@
       rel="stylesheet"
       media="screen,projection"
     />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
   </head>
   <body>
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-      <div class="container">
-        <a href="index.html" class="navbar-brand">Lion Sands</a>
-        <button
-          class="navbar-toggler"
-          data-toggle="collapse"
-          data-target="navbarCollapse"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a href="index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="about.html" class="nav-link">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a href="services.html" class="nav-link">Bookings</a>
-            </li>
-            <li class="nav-item">
-              <a href="blog.html" class="nav-link">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
 
     <!--First Parallax Image-->
     <div id="index-banner" class="parallax-container">
       <div class="section no-pad-bot">
         <div class="container"></div>
+           <!--Navbar-->
+           <nav class="navbar navbar-expand-md">
+            <a class="navbar-brand" href="index.html">Lion Sands</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="booking.html" class="nav-link">Bookings</a>
+                </li>
+                <li class="nav-item">
+                  <a href="blog.html" class="nav-link">Blog</a>
+                </li>    
+                <li class="nav-item">
+                  <a href="contact.html" class="nav-link">Contact Us</a>
+                </li>    
+              </ul>
+            </div>
+          </nav>
       </div>
       <div class="parallax">
         <img src="img/carousel1.jpg" alt="Lion Sands 1" />
@@ -82,7 +78,7 @@
     </div>
 
     <!--Intro Section-->
-    <div class="container">
+    <div class="intro-container">
       <div class="section">
         <div class="row">
           <div class="col s12 center">
@@ -109,54 +105,6 @@
       <div class="section no-pad-bot"></div>
       <div class="parallax">
         <img src="img/carousel2.jpg" alt="Lion Sands 2" />
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s12 m7">
-        <div class="card">
-          <div class="card-image">
-            <img src="img/treehouse.jpg">
-            <span class="card-title">Card Title</span>
-          </div>
-          <div class="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.</p>
-          </div>
-          <div class="card-action">
-            <a href="#">This is a link</a>
-          </div>
-        </div>
-      </div>
-      <div class="col s12 m7">
-        <div class="card">
-          <div class="card-image">
-            <img src="images/sample-1.jpg">
-            <span class="card-title">Card Title</span>
-          </div>
-          <div class="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.</p>
-          </div>
-          <div class="card-action">
-            <a href="#">This is a link</a>
-          </div>
-        </div>
-      </div>
-      <div class="col s12 m7">
-        <div class="card">
-          <div class="card-image">
-            <img src="images/sample-1.jpg">
-            <span class="card-title">Card Title</span>
-          </div>
-          <div class="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.</p>
-          </div>
-          <div class="card-action">
-            <a href="#">This is a link</a>
-          </div>
-        </div>
       </div>
     </div>
 
@@ -237,12 +185,52 @@
       <div class="parallax">
         <img src="img/carousel3.jpg" alt="Lion Sands 3" />
       </div>
+      </div>
+
+      <div class="top-scroller js-top-scroller svg-icons">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M6.101 261.899L25.9 281.698c4.686 4.686 12.284 4.686 16.971 0L198 126.568V468c0 6.627 5.373 12 12 12h28c6.627 0 12-5.373 12-12V126.568l155.13 155.13c4.686 4.686 12.284 4.686 16.971 0l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L232.485 35.515c-4.686-4.686-12.284-4.686-16.971 0L6.101 244.929c-4.687 4.686-4.687 12.284 0 16.97z"></path></svg>
+     </div>
+
+      <!--Footer-->
+      <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+        <div class="container text-center">
+          <small>Copyright &copy; Lion Sands</small>
+        </div>
+        <div class="template-demo">
+          <button type="button" class="btn btn-social-icon btn-facebook btn-rounded"><i class="fa fa-facebook"></i></button>
+          <button type="button" class="btn btn-social-icon btn-youtube btn-rounded"><i class="fa fa-youtube"></i></button> 
+          <button type="button" class="btn btn-social-icon btn-twitter btn-rounded"><i class="fa fa-twitter"></i></button> 
+          <button type="button" class="btn btn-social-icon btn-dribbble btn-rounded"><i class="fa fa-dribbble"></i></button>
+          <button type="button" class="btn btn-social-icon btn-linkedin btn-rounded"><i class="fa fa-linkedin"></i></button> 
+          <button type="button" class="btn btn-social-icon btn-instagram btn-rounded"><i class="fa fa-instagram"></i></button> 
+        </div>
+      </footer>
+    </body>
 
     <!--  Scripts-->
+    <script>
+      $(window).scroll(function(){
+        // console.log('wwww');
+        if ($(this).scrollTop() > 400) {
+          $('.top-scroller').fadeIn();
+        } else {
+          $('.top-scroller').fadeOut();
+        }
+      });
+      //Click event to scroll to top
+      $('.top-scroller').click(function(){
+        $('html, body').animate({scrollTop : 0},1000);
+        return false;
+      });
+      
+      </script>
     <script>
       //Get the current year for the copyright
       $('#year').text(new Date().getFullYear());
     </script>
+        <script>  $(document).ready(function(){
+          $('.fixed-action-btn').floatingActionButton();
+        });</script>
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>

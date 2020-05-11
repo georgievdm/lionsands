@@ -5,77 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Lion Sands</title>
 
-    <!-- CSS  -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+    <!--BOOTSTRAP 4 CSS-->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <!--BRAND FONT-->
     <link
       href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/c69ba6fe41.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="css/materialize.css"
-      type="text/css"
-      rel="stylesheet"
-      media="screen,projection"
-    />
+    <!--CUSTOM STYLESHEET-->
     <link
       href="css/style.css"
       type="text/css"
       rel="stylesheet"
       media="screen,projection"
     />
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <!--FONT AWESOME ICONS-->
+    <script
+      src="https://kit.fontawesome.com/c69ba6fe41.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body>
 
-    <!--First Parallax Image-->
-    <div id="index-banner" class="parallax-container">
-      <div class="section no-pad-bot">
-        <div class="container"></div>
-           <!--Navbar-->
-           <nav class="navbar navbar-expand-md">
-            <a class="navbar-brand" href="index.html">Lion Sands</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-              <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                  <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a href="about.html" class="nav-link">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a href="booking.html" class="nav-link">Bookings</a>
-                </li>
-                <li class="nav-item">
-                  <a href="blog.html" class="nav-link">Blog</a>
-                </li>    
-                <li class="nav-item">
-                  <a href="contact.html" class="nav-link">Contact Us</a>
-                </li>    
-              </ul>
-            </div>
-          </nav>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-expand-md fixed-top bg-dark navbar-dark">
+      <a class="navbar-brand" href="index.html">Lion Sands</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#aboutus" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="booking.html" class="nav-link">Bookings</a>
+          </li>
+          <li class="nav-item">
+            <a href="blog.html" class="nav-link">Blog</a>
+          </li>    
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact Us</a>
+          </li>    
+        </ul>
       </div>
-      <div class="parallax">
-        <img src="img/carousel1.jpg" alt="Lion Sands 1" />
+    </nav>
+
+    <div class="parallax">
+      <div class="overlay">
+        <h2> Easy parallax effect</h2>
+        <h4>scroll to see effect</h4>
       </div>
     </div>
+
+    <!--First Parallax Image-->
+    <div class="parallax-container">
+      <div class="parallax"><img src="img/carousel1.jpg"></div>
+    </div>
+
+        <div class="section white">
+          <div class="row container">
+            <h2 class="header">Parallax</h2>
+            <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+          </div>
+        </div>
 
     <!--Intro Section-->
     <div class="intro-container">
@@ -109,7 +110,7 @@
     </div>
 
     <!--Lodges Section-->
-    <div class="container">
+    <div id="aboutus" class="container">
       <div class="section">
         <div class="row">
           <div class="col s12 m4">
@@ -187,67 +188,62 @@
       </div>
       </div>
 
-      <div class="top-scroller js-top-scroller svg-icons">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M6.101 261.899L25.9 281.698c4.686 4.686 12.284 4.686 16.971 0L198 126.568V468c0 6.627 5.373 12 12 12h28c6.627 0 12-5.373 12-12V126.568l155.13 155.13c4.686 4.686 12.284 4.686 16.971 0l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L232.485 35.515c-4.686-4.686-12.284-4.686-16.971 0L6.101 244.929c-4.687 4.686-4.687 12.284 0 16.97z"></path></svg>
-     </div>
+      <div class="wrap">
+        <div class="container">
+          <form class="cool-b4-form">
+          <h2 class="text-center pt-4">Contact Us</h2>
+            <div class="form-row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="name" id="name">
+                  <label for="name">Name</label>
+                  <span class="input-highlight"></span>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email">
+                  <label for="email">Email</label>
+                  <span class="input-highlight"></span>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject">
+                  <label for="subject">Subject</label>
+                  <span class="input-highlight"></span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <textarea name="message" id="message" class="form-control"></textarea>
+                  <label for="message">Message</label>
+                  <span class="input-highlight"></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-10 mx-auto mt-3">
+              <button type="submit" class="btn btn-lg btn-danger btn-block">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
 
       <!--Footer-->
       <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
         <div class="container text-center">
           <small>Copyright &copy; Lion Sands</small>
         </div>
-        <div class="template-demo">
+        <div class="footer">
           <button type="button" class="btn btn-social-icon btn-facebook btn-rounded"><i class="fa fa-facebook"></i></button>
           <button type="button" class="btn btn-social-icon btn-youtube btn-rounded"><i class="fa fa-youtube"></i></button> 
           <button type="button" class="btn btn-social-icon btn-twitter btn-rounded"><i class="fa fa-twitter"></i></button> 
-          <button type="button" class="btn btn-social-icon btn-dribbble btn-rounded"><i class="fa fa-dribbble"></i></button>
-          <button type="button" class="btn btn-social-icon btn-linkedin btn-rounded"><i class="fa fa-linkedin"></i></button> 
           <button type="button" class="btn btn-social-icon btn-instagram btn-rounded"><i class="fa fa-instagram"></i></button> 
         </div>
       </footer>
     </body>
 
     <!--  Scripts-->
-    <script>
-      $(window).scroll(function(){
-        // console.log('wwww');
-        if ($(this).scrollTop() > 400) {
-          $('.top-scroller').fadeIn();
-        } else {
-          $('.top-scroller').fadeOut();
-        }
-      });
-      //Click event to scroll to top
-      $('.top-scroller').click(function(){
-        $('html, body').animate({scrollTop : 0},1000);
-        return false;
-      });
-      
-      </script>
-    <script>
-      //Get the current year for the copyright
-      $('#year').text(new Date().getFullYear());
-    </script>
-        <script>  $(document).ready(function(){
-          $('.fixed-action-btn').floatingActionButton();
-        });</script>
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/init.js"></script>
-    <script
-      src="http://code.jquery.com/jquery-3.5.0.min.js"
-      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
+
+   <!--Bootstrap 4 Scripts-->
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
